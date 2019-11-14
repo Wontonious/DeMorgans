@@ -1,29 +1,56 @@
 public class Main {
     public static void main(String[] args) {
         //Question 1
-        double x = 4.5;
-        double z = 3.6;
-        int y = 9;
-        int a = 4;
-        System.out.println((((y-a)*z)==x*a)||(a*z/y-x > 9000));
+        int x = 5;
+        int y = 7;
+        System.out.println(((x*4) < (y + 15)) && x < y);
+        System.out.println((5-4)<(7+15)&&5<7);
+        System.out.println(1<22&&5<7);
+        System.out.println(true&&true);
+        System.out.println(true);
 
         //Question 2
-        x += 20;
-        y -= 13.5;
-        System.out.println((y!=x)||(y+8.9)<=(x/5));
+        x = 10;
+        y = 20;
+        int z = 30;
+        System.out.println((( x == y) || (x < z)) && (x*2 + y)/5 > z);
+        System.out.println((( 10 == 20) || (10 < 30)) && (10*2 + 20)/5 > 30);
+        System.out.println((( 10 == 20) || (10 < 30)) && (20 + 20)/5 > 30);
+        System.out.println((( 10 == 20) || (10 < 30)) && (40)/5 > 30);
+        System.out.println((( 10 == 20) || (10 < 30)) && (8 > 30));
+        System.out.println(false||true&&false);
+        System.out.println(true&&false);
+        System.out.println(false);
 
         //Question 3
-        boolean b = ((y!=x)||(y+8.9)<=(x/5));
-        boolean c = ((((y-a)*z)==x*a)||(a*z/y-x > 9000));
-        System.out.println(b||c);
+        boolean a = true;
+        boolean b = false;
+        System.out.println((a || b) && ((a == b) || a));
+        System.out.println((true||false)&&((true==false)||true));
+        System.out.println(true&&(false||true));
+        System.out.println(true&&true);
+        System.out.println(true);
 
         //Question 4
-        System.out.println((Math.abs(-300) == 50/25*150)&&(Math.sqrt(3600)/20 >= 250/2.34/90));
+        a = false;
+        b = false;
+        x = 5;
+        y = 10;
+        System.out.println((a == b) && (x * 4) == (y % 6) * 5);
+        System.out.println((a == b) && (5 * 4) == (10 % 6) * 5);
+        System.out.println((a == b) && (20) == (4) * 5);
+        System.out.println((a == b) && (20) == (20));
+        System.out.println(false==false&&true);
+        System.out.println(true&&true);
+        System.out.println(true);
+
 
         //Question 5
-        x /= 3;
-        y *= -6.125;
-        System.out.println((((y+0.5)/3 >= x)&&(x==y))||(x*y!=a*z*x)||(x/y==a/z/x));
-
+        System.out.println((Math.abs(-2) == 2) || (Math.sqrt(Math.pow(9,2)) <= 9 && (-4 <= 4)));
+        System.out.println(((2)==2)||(Math.sqrt(81)<= 9 && (-4<=4)));
+        System.out.println(((2)==2)||(9 <= 9 && (-4<=4)));
+        System.out.println(true||(true&&true));
+        System.out.println(true||true);
+        System.out.println(true);
     }
 }
